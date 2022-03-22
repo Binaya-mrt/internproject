@@ -10,11 +10,17 @@ class Community extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Community"),
         actions: [
-          ElevatedButton(
-            onPressed: () {},
-            child: const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Tags"),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/tags");
+              },
+              child: const Text(
+                "Tags",
+                style: TextStyle(color: Colors.black),
+              ),
+              style: ElevatedButton.styleFrom(primary: Colors.white),
             ),
           ),
         ],

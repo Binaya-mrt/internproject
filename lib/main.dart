@@ -1,4 +1,5 @@
 import 'package:brosoft/view/community.dart';
+import 'package:brosoft/view/tags.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -10,7 +11,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Community(),
+      initialRoute: "/",
+      routes: {
+        '/': (context) => const Community(),
+        '/tags': (context) => const Tags(),
+      },
     );
   }
 }
