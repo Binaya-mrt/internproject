@@ -1,30 +1,30 @@
-import 'package:brosoft/view/widgets/newsfeedCard.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/captionheader.dart';
+import '../widgets/captionheader.dart';
+import '../widgets/newsfeedCard.dart';
 
-class Community extends StatelessWidget {
-  const Community({Key? key}) : super(key: key);
+class Dance extends StatelessWidget {
+  const Dance({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Community"),
-        actions: [
+        title: const Text("#Dance"),
+        leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, "/tags");
-              },
-              child: const Text(
-                "Tags",
-                style: TextStyle(color: Colors.black),
-              ),
-              style: ElevatedButton.styleFrom(primary: Colors.white),
-            ),
-          ),
+            padding: EdgeInsets.all(8.0),
+            child: Center(
+                child: Text(
+              '3k+ post',
+              style: TextStyle(fontSize: 15),
+            )),
+          )
         ],
       ),
       body: SafeArea(

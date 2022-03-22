@@ -1,30 +1,30 @@
-import 'package:brosoft/view/widgets/newsfeedCard.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/captionheader.dart';
+import '../widgets/captionheader.dart';
+import '../widgets/newsfeedCard.dart';
 
-class Community extends StatelessWidget {
-  const Community({Key? key}) : super(key: key);
+class Song extends StatelessWidget {
+  const Song({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Community"),
-        actions: [
+        title: const Text("#Songs"),
+        leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
+        actions: const [
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, "/tags");
-              },
-              child: const Text(
-                "Tags",
-                style: TextStyle(color: Colors.black),
-              ),
-              style: ElevatedButton.styleFrom(primary: Colors.white),
-            ),
-          ),
+            padding: EdgeInsets.all(8.0),
+            child: Center(
+                child: Text(
+              '1k+ post',
+              style: TextStyle(fontSize: 15),
+            )),
+          )
         ],
       ),
       body: SafeArea(
@@ -40,13 +40,13 @@ class Community extends StatelessWidget {
                 itemCount: 5,
                 itemBuilder: (BuildContext context, int index) {
                   return NewsFeed(
-                      caption: "See my Dance Coreographer by my self ",
+                      caption: "Just chanting prayers to get job ",
                       commentCount: "240",
                       likeCount: "15K",
                       job: "Teacher",
                       tag: "dance",
                       time: "${index + 5}h",
-                      username: "Prakash Sapkota",
+                      username: "Guddu Pandit",
                       imagePath: "images/brosoft1.jpg",
                       profileimagePath: "images/doctor.jpeg");
                 }),
