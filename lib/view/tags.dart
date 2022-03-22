@@ -7,8 +7,6 @@ class Tags extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _orientation = MediaQuery.of(context).orientation;
-
     return Scaffold(
         appBar: AppBar(
           title: const Text("Tags"),
@@ -23,6 +21,8 @@ class Tags extends StatelessWidget {
                 mainAxisSpacing: 4.0),
             itemBuilder: (BuildContext context, int index) {
               return Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
                 child: Row(
                   children: [
                     Padding(
@@ -43,6 +43,9 @@ class Tags extends StatelessWidget {
                         ],
                       ),
                     ),
+                    Image(
+                      image: AssetImage(tags[index].iconPath),
+                    )
                   ],
                 ),
               );
