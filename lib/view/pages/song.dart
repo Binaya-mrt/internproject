@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../widgets/captionheader.dart';
 import '../widgets/newsfeedCard.dart';
 
+/// THis is a song tag page.
+/// All the post related to song appears here.
+/// A user also can post from here.
+
 class Song extends StatelessWidget {
   const Song({Key? key}) : super(key: key);
 
@@ -33,7 +37,7 @@ class Song extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            StatusHeader(context),
+            statusHeader(context),
             ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),

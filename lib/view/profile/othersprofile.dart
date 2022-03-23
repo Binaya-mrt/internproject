@@ -4,12 +4,12 @@ import '../widgets/aboutuser.dart';
 import '../widgets/newsfeedCard.dart';
 import '../widgets/userProfiecard.dart';
 
+/// This is a page that a user sees when he opens other users profile.
+/// He cannot post from here also like from community or tags section.
+/// If he navigates back he will be redirected towards previous page.
+
+///
 class OtherUsersProfile extends StatelessWidget {
-  // OtherUsersProfile(
-  //     {required this.name, required this.job, required this.imagePath});
-  // final String name;
-  // final String job;
-  // final String imagePath;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

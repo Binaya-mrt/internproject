@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../widgets/captionheader.dart';
 import '../widgets/newsfeedCard.dart';
 
+/// THis is a dance tag page.
+/// All the post related to dance appears here.
+/// A user also can post from here.
+
 class Dance extends StatelessWidget {
   const Dance({Key? key}) : super(key: key);
 
@@ -33,7 +37,7 @@ class Dance extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            StatusHeader(context),
+            statusHeader(context),
             ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),

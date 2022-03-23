@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// THis widget is used to display the user's profile picture and name
+/// When user visited his own or other's profile, this is used to display name and image of that user.
+/// This widget takes [name],[job],[imagePath] of that particular user.
 class UserProfile extends StatelessWidget {
   const UserProfile(
       {required this.job, required this.name, required this.imagePath});
@@ -21,7 +24,6 @@ class UserProfile extends StatelessWidget {
             left: 30,
             child: Container(
               color: Colors.white,
-              // width: MediaQuery.of(context).size.width / 2,
               height: 60,
               child: Padding(
                 padding: EdgeInsets.only(

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// This method returns SizedBox.
+/// this is used in user's profile  and have featrure to update status.
+
 const Text verticalDivider = Text("|");
 
-SizedBox StatusHeader(context) {
+SizedBox statusHeader(context) {
   return SizedBox(
     height: 130,
     child: Column(

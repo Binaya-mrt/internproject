@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import '../widgets/captionheader.dart';
 import '../widgets/newsfeedCard.dart';
 
+/// THis is a exam tag page.
+/// All the post related to exam appears here.
+/// A user also can post from here.
+
 class Exam extends StatelessWidget {
   const Exam({Key? key}) : super(key: key);
 
@@ -33,7 +37,7 @@ class Exam extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            StatusHeader(context),
+            statusHeader(context),
             ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),

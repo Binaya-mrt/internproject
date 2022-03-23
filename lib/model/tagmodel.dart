@@ -1,3 +1,12 @@
+/// This is a model of a tag.
+/// a tag contains [title],[postCount],and [icon].
+/// If a user clicks on any icon, he will navigates to particular tag page.
+/// The route to navigate is defined by pass another argument [navigationRoute].
+///  In this project i have only implemented three pages:
+/// 1. Dance
+/// 2.Exam
+/// 3. Song
+/// Clicking on tags other then above mentioned will popup a snackbar.
 
 class Tag {
   Tag({

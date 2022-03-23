@@ -5,13 +5,11 @@ import '../widgets/aboutuser.dart';
 import '../widgets/newsfeedCard.dart';
 import '../widgets/userProfiecard.dart';
 
+/// This is a page that a user sees when he opens his own profile.
+/// He can post from here also like from community or tags section.
+/// If he navigates back he will be redirected towards previous page.
+///
 class UsersProfile extends StatelessWidget {
-  // UsersProfile(
-  //     {required this.imagePath, required this.job, required this.name});
-  // final String name;
-  // final String job;
-  // final String imagePath;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,7 +38,7 @@ class UsersProfile extends StatelessWidget {
                 style: TextStyle(fontSize: 20),
               ),
             ),
-            StatusHeader(context),
+            statusHeader(context),
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
