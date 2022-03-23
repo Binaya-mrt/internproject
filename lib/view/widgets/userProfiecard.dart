@@ -18,13 +18,17 @@ class UserProfile extends StatelessWidget {
           Positioned(
             top: 45,
             right: 0,
+            left: 30,
             child: Container(
               color: Colors.white,
+              // width: MediaQuery.of(context).size.width / 2,
               height: 60,
               child: Padding(
                 padding: EdgeInsets.only(
-                    left: 30, right: MediaQuery.of(context).size.width / 5),
+                  left: MediaQuery.of(context).size.width / 3,
+                ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
